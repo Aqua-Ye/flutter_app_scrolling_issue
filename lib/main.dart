@@ -78,6 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _startBackgroundAnimation(_scrollDirection);
     });
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
@@ -98,7 +99,6 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: EdgeInsets.all(0),
           itemCount: posters.length,
           physics: NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             childAspectRatio: posterAspectRatio,
             crossAxisCount: postersPerRow,
